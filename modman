@@ -4,4 +4,5 @@ app/code/local/Mage/Api/Model/Server/Handler/Abstract.php                   app/
 app/code/local/Mage/Catalog/Helper/Product/Type/Composite.php               app/code/local/Mage/Catalog/Helper/Product/Type/Composite.php
 app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext.php               app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext.php
 app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext/Collection.php    app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext/Collection.php
+app/code/local/Mage/Core/Model/Session/Abstract/Varien.php                  app/code/local/Mage/Core/Model/Session/Abstract/Varien.php
 app/etc/modules/DigitalPianism_BugFixes.xml                                 app/etc/modules/DigitalPianism_BugFixes.xml
