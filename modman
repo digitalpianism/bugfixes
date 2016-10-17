@@ -1,0 +1,4 @@
+# DigitalPianism_BugFixes
+app/code/community/DigitalPianism/BugFixes                              app/code/community/DigitalPianism/BugFixes
+app/code/local/Mage/Api/Model/Server/Handler/Abstract.php               app/code/local/Mage/Api/Model/Server/Handler/Abstract.php
+app/etc/modules/DigitalPianism_BugFixes.xml                             app/etc/modules/DigitalPianism_BugFixes.xml

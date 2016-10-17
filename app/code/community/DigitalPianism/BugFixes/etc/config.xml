@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DigitalPianism_BugFixes>
+            <version>0.0.1</version>
+        </DigitalPianism_BugFixes>
+    </modules>
+
+    <global>
+        <models>
+            <catalogsearch_resource>
+                <rewrite>
+                    <!-- Mage_CatalogSearch_Model_Resource_Fulltext -->
+                    <fulltext>DigitalPianism_BugFixes_Model_CatalogSearch_Resource_Fulltext</fulltext>
+                    <!-- Mage_CatalogSearch_Model_Resource_Fulltext_Collection -->
+                    <fulltext_collection>DigitalPianism_BugFixes_Model_CatalogSearch_Resource_Fulltext_Collection</fulltext_collection>
+                </rewrite>
+            </catalogsearch_resource>
+        </models>
+
+        <helpers>
+            <catalog>
+                <rewrite>
+                    <!-- Mage_Catalog_Helper_Product_Type_Composite -->
+                    <product_type_composite>DigitalPianism_BugFixes_Helper_Catalog_Product_Type_Composite</product_type_composite>
+                </rewrite>
+            </catalog>
+        </helpers>
+
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <DigitalPianism_BugFixes before="Mage_Adminhtml">DigitalPianism_BugFixes_Adminhtml</DigitalPianism_BugFixes>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
