@@ -1,4 +1,7 @@
 # DigitalPianism_BugFixes
-app/code/community/DigitalPianism/BugFixes                              app/code/community/DigitalPianism/BugFixes
-app/code/local/Mage/Api/Model/Server/Handler/Abstract.php               app/code/local/Mage/Api/Model/Server/Handler/Abstract.php
-app/etc/modules/DigitalPianism_BugFixes.xml                             app/etc/modules/DigitalPianism_BugFixes.xml
+app/code/community/DigitalPianism/BugFixes                                  app/code/community/DigitalPianism/BugFixes
+app/code/local/Mage/Api/Model/Server/Handler/Abstract.php                   app/code/local/Mage/Api/Model/Server/Handler/Abstract.php
+app/code/local/Mage/Catalog/Helper/Product/Type/Composite.php               app/code/local/Mage/Catalog/Helper/Product/Type/Composite.php
+app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext.php               app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext.php
+app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext/Collection.php    app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext/Collection.php
+app/etc/modules/DigitalPianism_BugFixes.xml                                 app/etc/modules/DigitalPianism_BugFixes.xml
