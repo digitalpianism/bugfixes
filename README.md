@@ -8,5 +8,6 @@ Bug fixes for the following Magento 1.9.3.0 bugs while Magento is working on the
 * Clone price is not updated for bundle products when changing selection: http://magento.stackexchange.com/a/141151/2380
 * Store specific labels disappears under certain conditions: https://github.com/digitalpianism/bugfixes/pull/1 (Thanks Arjen Miedema for the PR)
 * Undefined index: session_expire_timestamp: https://tomlankhorst.nl/fix-magento-undefined-index-session_expire_timestamp/
+* Freeshipping salesrule calculated based on price excluding tax: https://github.com/digitalpianism/bugfixes/issues/4 (Thanks Andy Smart for the fix and procedure)
 
 I'm trying to keep an updated list of all bugs here: http://magento.stackexchange.com/a/140826/2380
