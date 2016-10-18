@@ -565,6 +565,16 @@ abstract class Mage_Api_Model_Server_Handler_Abstract
             foreach ($result as &$row) {
                 if (!is_null($row) && !is_bool($row) && !is_numeric($row)) {
                     if (is_array($row)) {
+                        $objectArr = false;
+                        foreach ($row as &$rowitem) {
+                            if (is_object($rowitem) && $rowitem instanceof Varien_Object) {
+                                $rowitem = $this->processingMethodResult($rowitem->getData());
+                                $objectArr = true;
+                            }
+                        }
+                        if ($objectArr) {
+                            $row = array_values($row);
+                        }
                         $row = $this->processingMethodResult($row);
                     } else {
                         $row = $this->processingRow($row);
