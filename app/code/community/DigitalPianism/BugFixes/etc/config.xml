@@ -2,9 +2,22 @@
 <config>
     <modules>
         <DigitalPianism_BugFixes>
-            <version>0.0.2</version>
+            <version>0.0.3</version>
         </DigitalPianism_BugFixes>
     </modules>
+
+    <global>
+        <sales>
+            <quote>
+                <totals>
+                    <freeshipping>
+                        <after>subtotal</after>
+                        <before>tax_subtotal,shipping</before>
+                    </freeshipping>
+                </totals>
+            </quote>
+        </sales>
+    </global>
 
     <admin>
         <routers>
