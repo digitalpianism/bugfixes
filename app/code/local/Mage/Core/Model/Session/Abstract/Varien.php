@@ -457,9 +457,15 @@ class Mage_Core_Model_Session_Abstract_Varien extends Varien_Object
             return false;
         }
 
-        if ($this->useValidateSessionExpire()
-            && ( !isset($sessionData[self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP]) || $sessionData[self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP] < time() ) ) {
-            return false;
+        if ($this->useValidateSessionExpire() ) {
+            // If the VALIDATOR_SESSION_EXPIRE_TIMESTAMP key is not set, do it now
+            if( !isset($sessionData[self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP]) ) {
+                // $this->_data is a reference to the $_SESSION variable so it will be automatically modified
+                $this->_data[self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP] = time() + $this->getCookie()->getLifetime();
+                return true;
+            } elseif ( $sessionData[self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP] < time() ) {
+                return false;
+            }
         } else {
             $this->_data[self::VALIDATOR_KEY][self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP]
                 = $validatorData[self::VALIDATOR_SESSION_EXPIRE_TIMESTAMP];
