@@ -567,8 +567,12 @@ abstract class Mage_Api_Model_Server_Handler_Abstract
                     if (is_array($row)) {
                         $objectArr = false;
                         foreach ($row as &$rowitem) {
-                            if (is_object($rowitem) && $rowitem instanceof Varien_Object) {
-                                $rowitem = $this->processingMethodResult($rowitem->getData());
+                            if (is_object($rowitem)) {
+                                if ($rowitem instanceof Varien_Object) {
+                                    $rowitem = $this->processingMethodResult($rowitem->getData());
+                                } else {
+                                    $rowitem = json_decode(json_encode($rowitem), true);
+                                }
                                 $objectArr = true;
                             }
                         }
