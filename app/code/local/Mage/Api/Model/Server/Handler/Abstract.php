@@ -562,26 +562,18 @@ abstract class Mage_Api_Model_Server_Handler_Abstract
          * @see http://magento.stackexchange.com/q/140761/2380
          */
         if (is_array($result)) {
-            foreach ($result as &$row) {
+            foreach ($result as $key => $row) {
+                if (is_object($row))
+                {
+                    continue;
+                }
+
                 if (!is_null($row) && !is_bool($row) && !is_numeric($row)) {
                     if (is_array($row)) {
-                        $objectArr = false;
-                        foreach ($row as &$rowitem) {
-                            if (is_object($rowitem)) {
-                                if ($rowitem instanceof Varien_Object) {
-                                    $rowitem = $this->processingMethodResult($rowitem->getData());
-                                } else {
-                                    $rowitem = json_decode(json_encode($rowitem), true);
-                                }
-                                $objectArr = true;
-                            }
-                        }
-                        if ($objectArr) {
-                            $row = array_values($row);
-                        }
-                        $row = $this->processingMethodResult($row);
-                    } else {
-                        $row = $this->processingRow($row);
+                        $result[$key] = $this->processingMethodResult($row);
+                    }
+                    else {
+                        $result[$key] = $this->processingRow($row);
                     }
                 }
             }
