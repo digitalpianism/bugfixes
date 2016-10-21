@@ -11,3 +11,12 @@ Bug fixes for the following Magento 1.9.3.0 bugs while Magento is working on the
 * Freeshipping salesrule calculated based on price excluding tax: https://github.com/digitalpianism/bugfixes/issues/4 (Thanks Andy Smart for the fix and procedure)
 
 I'm trying to keep an updated list of all bugs here: http://magento.stackexchange.com/a/140826/2380
+
+# Backward incompatibility with modules using the gallery uploader
+
+There is a BC with modules using the gallery uploader. I've investigated the issue and a "simple" fix is unfortunately not possible for a few reasons:
+
+* the uploader config has been split into two different models (uploader and button config)
+* the js constructor has been modified from 3 to 2 parameters
+
+Thus I have written a small documentation to make your modules backward/forward compatible between version: http://magento.stackexchange.com/a/142013/2380
