@@ -1,4 +1,4 @@
-# DigitalPianism_BugFixes
+# Magento 1.9.3.0 Bug Fixes
 
 Bug fixes for the following Magento 1.9.3.0 bugs while Magento is working on the new version:
 
