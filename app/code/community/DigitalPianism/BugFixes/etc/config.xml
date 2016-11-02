@@ -2,7 +2,7 @@
 <config>
     <modules>
         <DigitalPianism_BugFixes>
-            <version>0.0.3</version>
+            <version>0.0.4</version>
         </DigitalPianism_BugFixes>
     </modules>
 
@@ -30,4 +30,14 @@
             </adminhtml>
         </routers>
     </admin>
+
+    <crontab>
+        <jobs>
+            <customer_flowpassword>
+                <run>
+                    <model>customer/observer::deleteCustomerFlowPassword</model>
+                </run>
+            </customer_flowpassword>
+        </jobs>
+    </crontab>
 </config>

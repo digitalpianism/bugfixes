@@ -4,6 +4,9 @@
         <DigitalPianism_BugFixes>
             <active>true</active>
             <codePool>community</codePool>
+            <depends>
+                <Mage_Customer/>
+            </depends>
         </DigitalPianism_BugFixes>
     </modules>
 </config>
