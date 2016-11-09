@@ -385,7 +385,7 @@ class Mage_Core_Model_Session_Abstract_Varien extends Varien_Object
      */
     public function useValidateSessionExpire()
     {
-        return true;
+        return $this->getCookie()->getLifetime() > 0;
     }
 
     /**
