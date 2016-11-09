@@ -10,6 +10,7 @@ Bug fixes for the following Magento 1.9.3.0 bugs while Magento is working on the
 * Undefined index: session_expire_timestamp: https://tomlankhorst.nl/fix-magento-undefined-index-session_expire_timestamp/
 * Freeshipping salesrule calculated based on price excluding tax: https://github.com/digitalpianism/bugfixes/issues/4 (Thanks Andy Smart for the fix and procedure)
 * Password Flow Cron Job does not work: https://github.com/digitalpianism/bugfixes/issues/6
+* Every page redirects to the homepage when session cookie lifetime is set to 0: https://github.com/digitalpianism/bugfixes/pull/7
 
 I'm trying to keep an updated list of all bugs here: http://magento.stackexchange.com/a/140826/2380
 
