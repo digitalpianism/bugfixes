@@ -1,4 +1,6 @@
-Update: Magento has released a new version 1.9.3.1 which addresses all the bugs listed below so please upgrade to the last version and if you have installed that BugFixes module, please uninstall it.
+# Magento 1.9.3.1 Update
+
+Magento has released a new version 1.9.3.1 which addresses all the bugs listed below so please upgrade to the last version and if you have installed that BugFixes module, please uninstall it.
 
 List of files added by the module:
 
