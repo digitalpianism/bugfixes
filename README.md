@@ -1,3 +1,15 @@
+Update: Magento has released a new version 1.9.3.1 which addresses all the bugs listed below so please upgrade to the last version and if you have installed that BugFixes module, please uninstall it.
+
+List of files added by the module:
+
+* `app/code/community/DigitalPianism/BugFixes`
+* `app/etc/modules/DigitalPianism_BugFixes.xml`
+* `app/code/local/Mage/Api/Model/Server/Handler/Abstract.php`
+* `app/code/local/Mage/Catalog/Helper/Product/Type/Composite.php`
+* `app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext.php`
+* `app/code/local/Mage/CatalogSearch/Model/Resource/Fulltext/Collection.php`
+* `app/code/local/Mage/Core/Model/Session/Abstract/Varien.php`
+
 # Magento 1.9.3.0 Bug Fixes
 
 Bug fixes for the following Magento 1.9.3.0 bugs while Magento is working on the new version:
